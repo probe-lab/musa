@@ -6,13 +6,11 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Background](#background)
-- [Install](#install)
 - [Usage](#usage)
-    - [Generator](#generator)
-- [Badge](#badge)
-- [Example Readmes](#example-readmes)
-- [Related Efforts](#related-efforts)
+  - [Tracing](#tracing)
+- [Configuration](#configuration)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
