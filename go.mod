@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/ipfs/go-datastore v0.6.1-0.20230901172804-1caa2449ed7c
 	github.com/libp2p/go-libp2p v0.30.0
-	github.com/libp2p/go-libp2p-kad-dht/v2 v2.0.0-20230919123514-1220ddd91f5f // v2-develop branch
+	github.com/libp2p/go-libp2p-kad-dht/v2 v2.0.0-20230919134412-e86381e824dd // v2-develop branch
 	github.com/prometheus/client_golang v1.16.0
 	github.com/urfave/cli/v2 v2.25.7
 	go.opentelemetry.io/otel v1.18.0
