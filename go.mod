@@ -1,11 +1,11 @@
 module github.com/plprobelab/musa
 
-go 1.20
+go 1.21
 
 require (
 	github.com/ipfs/go-datastore v0.6.1-0.20230901172804-1caa2449ed7c
 	github.com/libp2p/go-libp2p v0.30.0
-	github.com/libp2p/go-libp2p-kad-dht/v2 v2.0.0-20230919134412-e86381e824dd // v2-develop branch
+	github.com/plprobelab/zikade v0.0.0-20231002151622-5323fffc1882
 	github.com/prometheus/client_golang v1.16.0
 	github.com/urfave/cli/v2 v2.25.7
 	go.opentelemetry.io/otel v1.18.0
@@ -50,6 +50,7 @@ require (
 	github.com/ipfs/boxo v0.12.0 // indirect
 	github.com/ipfs/go-cid v0.4.1 // indirect
 	github.com/ipfs/go-ds-leveldb v0.5.0 // indirect
+	github.com/ipfs/go-log v1.0.5 // indirect
 	github.com/ipfs/go-log/v2 v2.5.1 // indirect
 	github.com/ipld/go-ipld-prime v0.21.0 // indirect
 	github.com/jackpal/go-nat-pmp v1.0.2 // indirect
@@ -62,6 +63,7 @@ require (
 	github.com/libp2p/go-cidranger v1.1.0 // indirect
 	github.com/libp2p/go-flow-metrics v0.1.0 // indirect
 	github.com/libp2p/go-libp2p-asn-util v0.3.0 // indirect
+	github.com/libp2p/go-libp2p-kbucket v0.5.0 // indirect
 	github.com/libp2p/go-libp2p-record v0.2.0 // indirect
 	github.com/libp2p/go-msgio v0.3.0 // indirect
 	github.com/libp2p/go-nat v0.2.0 // indirect
@@ -88,9 +90,10 @@ require (
 	github.com/multiformats/go-varint v0.0.7 // indirect
 	github.com/onsi/ginkgo/v2 v2.11.0 // indirect
 	github.com/opencontainers/runtime-spec v1.1.0 // indirect
+	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/plprobelab/go-kademlia v0.0.0-20230913171354-443ec1f56080 // indirect
+	github.com/plprobelab/go-libdht v0.0.0-20230928202609-8c74cc7954b3 // indirect
 	github.com/polydawn/refmt v0.89.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect

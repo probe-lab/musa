@@ -11,16 +11,14 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-
 	"github.com/ipfs/go-datastore"
 	"github.com/libp2p/go-libp2p"
-	dht "github.com/libp2p/go-libp2p-kad-dht/v2"
-	"github.com/libp2p/go-libp2p-kad-dht/v2/coord"
-	"github.com/libp2p/go-libp2p-kad-dht/v2/tele"
+	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/protocol"
 	"github.com/libp2p/go-libp2p/core/routing"
+	dht "github.com/plprobelab/zikade"
+	"github.com/plprobelab/zikade/tele"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/urfave/cli/v2"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
@@ -183,11 +181,6 @@ func daemonAction(cCtx *cli.Context) error {
 	dhtConfig.ProtocolID = protocol.ID(cfg.ProtocolID)
 	dhtConfig.MeterProvider = meterProvider
 	dhtConfig.TracerProvider = traceProvider
-
-	kadConfig := coord.DefaultCoordinatorConfig()
-	kadConfig.MeterProvider = meterProvider
-	kadConfig.TracerProvider = traceProvider
-	dhtConfig.Kademlia = kadConfig
 
 	if dhtConfig.ProtocolID == dht.ProtocolIPFS {
 		dhtConfig.Datastore = datastore.NewNullDatastore()
