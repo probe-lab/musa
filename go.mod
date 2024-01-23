@@ -1,11 +1,11 @@
-module github.com/plprobelab/musa
+module github.com/probe-lab/musa
 
 go 1.21
 
 require (
 	github.com/ipfs/go-datastore v0.6.1-0.20230901172804-1caa2449ed7c
 	github.com/libp2p/go-libp2p v0.30.0
-	github.com/plprobelab/zikade v0.0.0-20231002151622-5323fffc1882
+	github.com/probe-lab/zikade v0.0.0-20231002151622-5323fffc1882
 	github.com/prometheus/client_golang v1.16.0
 	github.com/urfave/cli/v2 v2.25.7
 	go.opentelemetry.io/otel v1.18.0
@@ -93,7 +93,7 @@ require (
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/plprobelab/go-libdht v0.0.0-20230928202609-8c74cc7954b3 // indirect
+	github.com/probe-lab/go-libdht v0.0.0-20230928202609-8c74cc7954b3 // indirect
 	github.com/polydawn/refmt v0.89.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
