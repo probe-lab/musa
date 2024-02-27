@@ -84,11 +84,11 @@ GLOBAL OPTIONS:
 
 ## Maintainers
 
-[@ProbeLab](https://github.com/plprobelab).
+[@ProbeLab](https://github.com/probe-lab).
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/plprobelab/musa/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/probe-lab/musa/issues/new) or submit PRs.
 
 ## License
 
