@@ -30,6 +30,7 @@ import (
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
 	"go.opentelemetry.io/otel/trace"
+	nooptrace "go.opentelemetry.io/otel/trace/noop"
 	expslog "golang.org/x/exp/slog"
 )
 
@@ -48,10 +49,9 @@ type Config struct {
 }
 
 func (c Config) String() string {
-	privKey := c.PrivateKey
-	c.PrivateKey = "" // value receiver, better be defensive though
-	data, _ := json.Marshal(c)
-	c.PrivateKey = privKey
+	tmp := c
+	tmp.PrivateKey = "" // value receiver, better be defensive though
+	data, _ := json.Marshal(tmp)
 	return string(data)
 }
 
@@ -252,7 +252,7 @@ func serveMetrics() {
 
 func newTraceProvider(ctx context.Context) (trace.TracerProvider, error) {
 	if !cfg.EnableTraceProvider() {
-		return trace.NewNoopTracerProvider(), nil
+		return nooptrace.NewTracerProvider(), nil
 	}
 
 	exp, err := otlptracegrpc.New(ctx,
