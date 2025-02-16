@@ -1,6 +1,6 @@
 module github.com/probe-lab/musa
 
-go 1.22
+go 1.23
 
 require (
 	github.com/ipfs/go-datastore v0.6.1-0.20230901172804-1caa2449ed7c
